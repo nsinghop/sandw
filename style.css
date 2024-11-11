@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #131021;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Navbar */
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 80px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1d4ed8;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+/* Header */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .content {
+    flex: 1;
+    max-width: 600px;
+}
+
+header h4 {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+header h1 span {
+    color: #1d4ed8;
+}
+
+header p {
+    color: #ccc;
+}
+
+header .image {
+    max-width: 300px;
+    margin: auto;
+}
+
+header .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer .column {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+footer p, footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer .socials a {
+    color: #ccc;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: #1d4ed8;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #777;
+    padding: 1rem;
+}
+#inro{
+    height: 80vh;
+    width: 100%;
+
+}
+.achivements{
+    height: 40vh;
+
+}
+.achivementsop{
+    font-size: 40px;
+    color: #1d4ed8;
+    text-decoration: underline gray;
+}
+.box{
+    margin-left: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header .content h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (max-width: 576px) {
+    header .image img {
+        max-width: 200px;
+    }
+}
